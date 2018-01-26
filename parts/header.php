@@ -41,7 +41,7 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-       <?php
+<?php
 
 if (!isset($loggedUser)) {
 
@@ -52,7 +52,9 @@ if (!isset($loggedUser)) {
 <?php
 
 } else {
-  echo 'hi '. $loggedUser->username.'&nbsp;';
+  
+  echo '<span style="color: white; font-weight: bold;">Hi ' . $loggedUser->username . '</span>&nbsp;&nbsp;&nbsp;';
+
 ?>
           <a class="btn btn-outline-danger my-2 my-sm-0" href="index.php?a=logout">Logout</a>
 <?php

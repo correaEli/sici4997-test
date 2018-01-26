@@ -2,8 +2,8 @@
 
 //$uname = (isset($_POST['username'])) ? $_POST['username'] : '';
 $uname = $_POST['username'] ?? '';
-?>
 
+?>
 <div>
   <div class="row">
     <div class="col-sm-3">
